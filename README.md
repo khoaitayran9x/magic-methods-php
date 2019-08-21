@@ -25,7 +25,8 @@ echo $thanh->getName();
 // __destruct
 ```
 ## __set() và __get() 
-- Với các thuộc tính private, protected, để truy suất / thay đổi ta sử dụng __get() / __set()
+- __set() sẽ tự động được gọi khi chúng ta thiết lập giá trị cho một thuộc tính không được phép truy cập từ bên ngoài, hoặc không tồn tại.
+-  __get() sẽ tự động được gọi khi chúng ta lấy ra giá trị của các thuộc tính trong đối mà chúng ta không được phép truy cập nó từ bên ngoài hoặc không tồn tại.
 ```php
 Class People {
     private $name;
